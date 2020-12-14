@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/ico" />
+    <title>COVID-19 Dashboard</title>
+  <link href="main.css" rel="stylesheet"></head>
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="header__wrapper">
+          <div
+            id="header__menu-btn"
+            class=" burger__menu-btn header__menu-btn menu-btn"
+            data-path="form-popup"
+          >
+            <div class="menu-btn__burger"></div>
+          </div>
+          <div class=" header__logo">
+            <div class="header__title-wrapper">
+              <div class="header__title">COVID-19</div>
+              <div class="header__subtitle">dashboard</div>
+            </div>
+            <img class="header__img" src="./img/logo.png" alt="logo" />
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW SIDEBAR -->
+      <div class="sidebar-modal">
+        <div class="sidebar-modal__overlay">
+          <div class="sidebar-modal__window modal--1" data-target="form-popup">
+            <div class="sidebar-modal__back">
+              <img src="./img/close.png" alt="close" />
+            </div>
+            <div class="sidebar-modal__logo">
+              <div class="col header__logo">
+                <div class="header__title-wrapper">
+                  <div class="header__title">COVID-19</div>
+                  <div class="header__subtitle">dashboard</div>
+                </div>
+                <img class="header__img" src="./img/logo.png" alt="logo" />
+              </div>
+              <div class="sidebar-modal__subtitle"></div>
+            </div>
+            <ul class="sidebar-modal__menu">
+              <li class="burger__menu-btn sidebar-modal__link">
+                Link No1
+              </li>
+              <li class="burger__menu-btn sidebar-modal__link">
+                Link No2
+              </li>
+              <li class="burger__menu-btn sidebar-modal__link">
+                Link No3
+              </li>
+              <li class="burger__menu-btn sidebar-modal__link">
+                Link No4
+              </li>
+              <li class="burger__menu-btn sidebar-modal__link">
+                Link No5
+              </li>
+              <li class="burger__menu-btn sidebar-modal__link">
+                Link No6
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- END NEW SIDEBAR -->
+    </header>
+    <!-- MAIN -->
+    <main class="main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 main__map">map</div>
+          <div class="col-2 main__cases cases">
+            Cases by Country/Region
+            <ul class="cases__list">
+              <!-- <li class="cases__item"><span class="cases__count">16,256,754</span><span class="cases__country">US</span></li> -->
+            </ul>
+          </div>
+          <div class="col-4 main__info">
+            <div class="col main__deaths">
+              <div class="main__global-deaths deaths">
+                Global Deaths
+                <ul class="deaths__list"></ul>
+              </div>
+              <div class="main__recovered recovered">
+                Recovered
+                <ul class="recovered__list"></ul>
+              </div>
+            </div>
+            <div class="col main__graphic graphic">graphic</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer"><div class="col">RS School &copy; 2020</div></footer>
+  <script src="vendors-node_modules_bootstrap_dist_js_bootstrap_js.js"></script><script src="main.js"></script><script src="analytics.js"></script></body>
+</html>
